@@ -27,6 +27,7 @@ app.post('/auth/register', registerValidation, (req, res) => {
     email: req.body.email,
     fullName: req.body.fullName,
     avatarUrl: req.body.avatarUrl,
+    passwordHash: req.body.email,
   });
 
   res.json({
